@@ -15,13 +15,9 @@ public class StudentDAO {
     }
     
     public int find(String username) {
-        
         int id = 0;
-        
         try {
-            
             Connection conn = daoFactory.getConnection();
-        
             
             PreparedStatement pstmt = conn.prepareStatement(QUERY_FIND);
             pstmt.setString(1, username);

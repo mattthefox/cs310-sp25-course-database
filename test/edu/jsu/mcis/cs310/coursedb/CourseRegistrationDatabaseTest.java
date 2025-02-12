@@ -256,7 +256,7 @@ public class CourseRegistrationDatabaseTest {
             // get sections; compare number of registered sections and JSON data
 
             // CS 201
-
+            
             JsonArray t1 = (JsonArray)Jsoner.deserialize(sectionDao.find(1, "CS", "201"));
             assertEquals(17, t1.size());
             assertEquals(r6, t1);
